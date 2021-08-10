@@ -1,0 +1,412 @@
+.fade-in {                          /*reference: https://www.youtube.com/watch?v=UInN6O_nMKs*/
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {                 /*reference: https://www.youtube.com/watch?v=UInN6O_nMKs*/
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background: url(../images/background2.jpg) fixed no-repeat;       /*source: https://i.ytimg.com/vi/1lQXUBsq808/maxresdefault.jpg*/
+  background-size: cover;
+  font-family: "Avant Garde", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;          /*reference: https://www.cssfontstack.com/Avant-Garde*/
+}
+
+.font_home {
+  color: orange;
+  font-weight: bold;
+}
+
+.font_modric {
+  color: gold;
+  font-weight: bold;
+}
+
+.font_ronaldo {
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;        /*reference: https://stackoverflow.com/questions/2570972/css-font-border*/
+  font-weight: bold;
+
+}
+
+.font_salah {
+  color: crimson;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 60px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+h4 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+li {
+  font-size: 20px;
+}
+
+cite {
+  color: white;
+  width: 500px;
+  padding-top: 620px;
+  padding-bottom: 100px;
+}
+
+blockquote {
+  width: 800px;
+  margin: 15px auto;
+  color: white;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  margin-top: 75px;
+}
+
+.row {
+  display: flex;
+  margin-top: 70px ;
+  margin-bottom: 70px;
+  justify-content: center;
+}
+
+.tab {
+  height: 70px;
+  margin: 0px 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Avant Garde", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  transition: opacity .2s;
+}
+
+.tab:hover {                        /*reference: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering*/
+  text-shadow: 2px 2px silver;      /*reference: https://www.w3schools.com/css/css3_shadows.asp*/
+}
+
+.nav_award_hover {                              /*reference: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 300px;
+  height: 220px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  box-shadow: 0 0 15px 10px silver;
+  background: url(../images/award2.jpg) no-repeat;
+  background-size: 300px 220px;
+}
+
+.logo:hover {                             /*reference: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering*/
+  opacity: 0;
+}
+
+.nav_award_hover:hover {
+  opacity: 1;
+}
+
+.nav_side {
+  display: flex;
+  font-size: 80px;
+  flex-grow: 1;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.nav_side:hover {
+  opacity: 1;
+  text-shadow: 2px 2px silver;
+}
+
+.left_arrow {
+  position: fixed;
+  left: 5%;
+  top: 45%;
+  bottom: 45%;
+}
+
+.right_arrow {
+  position: fixed;
+  right: 5%;
+  top: 45%;
+  bottom: 45%;
+}
+
+.homepage_section {
+  border-radius: 80%;
+  background: url(../images/background.jpg) fixed no-repeat;              /*source: https://wallpapercave.com/wp/tekM38P.jpg*/
+  margin-left: 10%;
+  margin-right: 10%;
+  background-size: cover;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 0 0 15px 10px black;        /*reference: https://stackoverflow.com/questions/28384582/how-to-fade-out-blur-divs-borders-with-css?rq=1*/
+}
+
+.player_section {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-size: cover;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 0 0 15px 10px black;
+}
+
+.modric_section {
+  background: url(../images/background3.jpg) fixed no-repeat;              /*source: https://cdn-s3.si.com/s3fs-public/2015/01/06/realmadridtifo.jpg*/
+  background-size: cover;
+}
+
+.ronaldo_section {
+  background: url(../images/background4.jpg) fixed no-repeat;              /*source: https://wallpapercave.com/wp/wp1940198.jpg*/
+  background-size: cover;
+}
+
+.salah_section {
+  background: url(../images/background5.jpg) fixed no-repeat;              /*source: https://wallpapercave.com/wp/wp1889539.jpg*/
+  background-size: cover;
+}
+
+.player_image {                              /*reference: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.modric_image {
+  background: url(../images/modric2.jpg) no-repeat;        /*source: https://www.uefa.com/uefachampionsleague/news/newsid=2565829.html*/
+  background-size: 800px 600px;
+}
+
+.ronaldo_image {
+  background: url(../images/ronaldo2.jpg) no-repeat;      /*source: https://media.gettyimages.com/photos/cristiano-ronaldo-of-juventus-fc-celebrates-after-scoring-the-opening-picture-id1034214098*/
+  background-size: 800px 600px;
+}
+
+.salah_image {
+  background: url(../images/salah2.jpg) no-repeat;        /*source: https://www.uefa.com/uefachampionsleague/news/newsid=2565831.html*/
+  background-size: 800px 600px;
+}
+
+.player_gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+
+}
+
+.modric_gif {
+  background: url(../images/modric.gif) no-repeat;      /*source: https://makeagif.com/gif/argentina-vs-croatia-0-3-luka-modric-goal-world-cup-21062018-hd-CnTh3e*/
+  background-size: 800px 600px;
+  box-shadow: 0 0 15px 10px gold;
+}
+
+.ronaldo_gif {
+  background: url(../images/ronaldo.gif) no-repeat;      /*source: https://78.media.tumblr.com/651c762e98c571d40ab87100074aa6f8/tumblr_pf5weaciXJ1qa33wlo1_500.gif*/
+  background-size: 800px 600px;
+  box-shadow: 0 0 15px 10px black;
+}
+
+.salah_gif {
+  background: url(../images/salah.gif) no-repeat;        /*source: https://i0.wp.com/78.media.tumblr.com/2447fc439d920d1198c884fb2003c092/tumblr_p7qa7qI91m1tf8a5ao1_540.gif?zoom=2&resize=548%2C300&ssl=1*/
+  background-size: 800px 600px;
+  box-shadow: 0 0 15px 10px crimson;
+}
+
+.player_gif:hover {
+  opacity: 1;
+}
+
+.player_image:hover {
+  opacity: 0;
+}
+
+.player_gif:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.name_line {
+  display: flex;
+  margin: 10px 30px 0px 30px;
+  justify-content: center;
+
+}
+
+.name_linke_link {
+  transition: opacity 0.2s;
+}
+
+.name_line_link:hover {
+  text-shadow: 2px 2px silver;
+}
+
+.homepage_h3 {
+  color: orange;
+  height: 100px;
+  margin: 0px 100px;
+  padding: 10px;
+}
+
+.finalists {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.hover {
+  position: relative;
+  justify-content: center;
+}
+
+.summary {
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.hover:hover .summary {                             /*reference: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering*/
+  visibility: visible;
+  opacity: 1;
+}
+
+.hover_bullet_points {
+  color: white;
+  font-size: 17px;
+  margin: 20px;
+  width: 200px;
+  background: url(../images/background2.jpg) fixed no-repeat;     /*source: https://i.ytimg.com/vi/1lQXUBsq808/maxresdefault.jpg*/
+  background-size: cover;
+  line-height: 30px;
+}
+
+.modric_smry {
+  background: url(../images/modric_hover.jpg) no-repeat;    /*source: https://www.elsiglodedurango.com.mx/m/i/2018/09/730721.jpeg*/
+  background-size: cover;
+  box-shadow: 0 0 15px 10px gold;
+}
+
+.ronaldo_smry {
+  background: url(../images/ronaldo_hover.jpg) no-repeat;   /*source: https://www.elsiglodedurango.com.mx/m/i/2018/09/730721.jpeg*/
+  background-size: cover;
+  box-shadow: 0 0 15px 10px black;
+}
+
+.salah_smry {
+  background: url(../images/salah_hover.jpg) no-repeat;     /*source: https://www.elsiglodedurango.com.mx/m/i/2018/09/730721.jpeg*/
+  background-size: cover;
+  box-shadow: 0 0 15px 10px red;
+}
+
+.homepage_facts {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.ul_homepage {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.li_homepage {
+  color: white;
+}
+
+.winner {
+  color: orange;
+}
+
+.player_intro_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.player_facts_p {
+  color: white;
+  width: 450px;
+}
+
+
+.player_facts_row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#testimonials {
+  display: block;
+}
+
+.player_facts_li {
+  color: white;
+  width: 400px;
+  margin: 0 auto;
+  list-style-position: inside;
+}
